@@ -17,4 +17,6 @@
   (sqrt-iter 1.0 x)
   )
 
-(sqrt 100)
+(sqrt 10e41)
+(sqrt 10e-11)
+(sqrt 10e-21)
