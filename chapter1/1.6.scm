@@ -25,4 +25,4 @@
 
 (sqrt 2)
 ;Why this lead to ;Aborting!: maximum recursion depth exceeded ?
-;Because new-if has a else-clause which is sqrt-iter that also using new-if. cond will use regular express to evaluate a expression
+;Because new-if has a else-clause which is sqrt-iter that also using new-if. cond will use applicative order evaluation express to evaluate a expression
