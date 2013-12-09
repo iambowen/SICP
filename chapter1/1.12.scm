@@ -1,0 +1,13 @@
+(define(yanghui row col)
+  (cond ((= row 1) 1)
+        ((= col 1) 1)
+        ((= row col) 1)
+        (else (+ (yanghui (- row 1) (- col 1)) (yanghui (- row 1) col)))
+   )
+  )
+
+(yanghui 3 2)
+(yanghui 3 3)
+(yanghui 4 2)
+(yanghui 5 2)
+(yanghui 6 4)
